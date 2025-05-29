@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple HTML Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 30px;
+        background: #f9f9f9;
+      }
+      ul {
+        margin-top: 20px;
+      }
+      li {
+        margin: 5px 0;
+      }
+      button {
+        margin-left: 10px;
+      }
+      #message {
+        margin-top: 20px;
+        color: #2c3e50;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="h1">Learn HTML Structure</h1>
+    <p>
+      This is a simple HTML page with a form and a list. There is no JavaScript
+      or interactivity.
+    </p>
+
+    <input type="text" id="fruitInput" placeholder="Enter a fruit" />
+    <button id="addBtn">Add</button>
+
+    <ul id="fruitList">
+      <!-- Fruits will be rendered here by JavaScript -->
+    </ul>
+
+    <button id="clearBtn">Clear All</button>
+
+    <div id="message"></div>
+
+    <script>
+      const h1 = document.querySelector(".h1");
+      console.log("h1 element:", h1);
+
+      h1.textContent = "Welcome to the Simple HTML Example";
+
+      h1.style.backgroundColor = "#3498db";
+    </script>
+
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
